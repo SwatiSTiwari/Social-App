@@ -5,8 +5,9 @@ var format = require("date-format");
 var date;
 
 app.get("/", (req, resp) => {
-  resp.send("<h1>hello swati how are you?</h1>");
+  resp.send("<h1>hello this is swati how are you?</h1>");
 });
+//-------------- Instragram ------------
 
 app.get("/api/instagram", (req, resp) => {
   const instaSocial = {
@@ -18,18 +19,18 @@ app.get("/api/instagram", (req, resp) => {
 
   resp.status(200).json(instaSocial);
 });
-
+//------------- Twitter ---------------
 app.get("/api/twitter", (req, resp) => {
   const twitterSocial = {
     id: "ThisIsSwati",
-    follower: 53,
+    follower: 69,
     following: 95,
     date: new Date(),
   };
 
   resp.status(200).json(twitterSocial);
 });
-
+// ------------- LinkedIN ----------
 app.get("/api/linkedin", (req, resp) => {
   const linkedinSocial = {
     id: "swatistiwati13",
